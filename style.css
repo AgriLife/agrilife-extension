@@ -1,0 +1,266 @@
+/*
+Theme Name: AgriLife Extension
+Theme URI: http://agriLife.org/
+Description: Child theme for the main Extension site.
+Version: 2.0
+Author: AgriLife Communications
+Template: agrilife-2.0
+Tags: fixed width, two columns
+*/
+
+@import url("../agrilife-2.0/style.css");
+
+
+
+
+/**********************************************************
+
+Twitter Updates
+
+**********************************************************/
+
+div#twittermore {
+	padding: 0 10px;
+	text-align: right;
+}
+
+div#updates {
+	background: url(../agrilife-extension/images/bkgd-twitter.jpg) no-repeat 0 0;
+	color: #666;
+	float: right;
+	font: 1em/1.1em normal Georgia, "Times New Roman", Times, serif;
+	height: auto !important;
+	height: 305px;
+	min-height: 305px;
+	padding-right: 10px;
+	width: 260px;
+}
+
+div#updates ul {
+	list-style: none;
+	margin: 0;
+	padding: 55px 22px 0;
+}
+
+div#updates ul li {
+	padding: 7px 0 15px 0;
+}
+
+div#updates ul li a {
+	font: 0.8em/1em Arial, Helvetica, sans-serif;
+}
+
+
+/**********************************************************
+
+Modules: News and about / Links
+
+**********************************************************/
+
+div#modules {
+	background: #415353 url(../agrilife-extension/images/bkgd-extension.gif) repeat 0 0;
+	color: #e0d3b8;
+	font-size: 0.9em;
+	line-height: 1.5em;
+}
+
+div#modules a {
+	color: #a0def1;
+}
+
+div#modules a:hover {
+	color: #d8f3fb;
+}
+
+div#modules-box {
+	margin: 0 auto;
+	padding: 20px 10px;
+	width: 930px;
+}
+
+div#about {
+	background: url(../agrilife-extension/images/bkgd-about-eb.png) no-repeat left bottom !important;
+	background: url(../agrilife-extension/images/bkgd-about-e.gif) repeat 0 0;
+	float: right;
+	padding-bottom: 10px;
+	width: 576px;
+}
+
+div#about-box {
+	background: url(../agrilife-extension/images/bkgd-about-et.png) no-repeat 0 0 !important;
+	background: none;
+	padding: 10px 20px 0;
+}
+
+div#about p {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.3em;
+	line-height: 1.3em;
+	margin: 0.5em 0;
+}
+
+div#about a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+div#about ul {
+	list-style: none;
+	margin: 1.5em 0 0;
+	overflow: auto;
+	padding: 0 0 10px;
+}
+
+div#about ul li {
+	float: left;
+	padding-right: 20px;
+	width: 44%;
+}
+
+div#about ul li span {
+	display: list-item;
+	list-style: none;
+}
+
+div#news {
+	float: left;
+	width: 326px;
+}
+
+div#news-box {
+	background: url(../agrilife-extension/images/bkgd-news.png) no-repeat 0 0 !important;
+	background: url(../agrilife-extension/images/bkgd-enews.gif) repeat 0 0;
+	padding: 10px 20px;
+}
+
+div#news-scroll {
+	height: 14em;
+	overflow: auto;
+}
+
+div#news-box ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+div#news-box li {
+	line-height: 1.3em;
+	padding: 10px 0;
+	font-size: 1.1em;
+}
+
+div#news-box li a {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+div#news-box li div {
+	color: #fff;
+	font-size: 0.9em;
+	line-height: 1.4em;
+}
+
+div#news-box li span {
+	color: #999;
+}
+
+div#news-links {
+	background: url(../agrilife-extension/images/bkgd-news-links.png) no-repeat left bottom !important;
+	background: url(../agrilife-extension/images/bkgd-enews-links.gif) repeat 0 0;
+	color: #999;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	padding: 5px 15px 10px;
+	text-align: right;
+}
+
+/**********************************************************
+
+Moved Topics Text to differentiate between Agencies
+
+**********************************************************/
+
+div#topics h3 {
+	background: url(../agrilife-extension/images/topics-text-ext.gif) no-repeat 0 0;
+	font-size: 0;
+	height: 60px;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+	text-indent: -999em;
+	width: 150px;
+}
+
+div#topicsshadow {
+	background: url(../agrilife-extension/images/topics-shadow-bottom.gif) repeat-x bottom;
+	padding: 0 0 3px 0;
+}
+
+/**********************************************************
+
+jQuery horizontal scroll pane style sheet included below to minimize http requests.
+Veritcal scroll pane styles included in structure style sheet.
+
+**********************************************************/
+
+.jHorizontalScrollPaneContainer {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.jHorizontalScrollPaneTrack {
+	position: absolute;
+	cursor: pointer;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: #000 url(../agrilife-extension/images/topics-scroll-bkgd.jpg) repeat-x;
+}
+
+.jHorizontalScrollIntervalTrack { 
+	position: absolute;
+}
+
+.jHorizontalScrollPaneDrag {
+	position: absolute;
+	background: url(../agrilife-extension/images/topics-scroll-button.jpg) no-repeat 50% 50%;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.jHorizontalScrollPaneDragLeft {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+.jHorizontalScrollPaneDragRight {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+}
+a.jHorizontalScrollArrowLeft {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	text-indent: -2000px !important;
+	overflow: hidden;
+	height: 9px;
+	width: 10px;
+}
+
+a.jHorizontalScrollArrowRight {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	right: 0;
+	text-indent: -2000px !important;
+	overflow: hidden;
+	height: 9px;
+	width: 10px;
+}
